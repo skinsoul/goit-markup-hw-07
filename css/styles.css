@@ -57,61 +57,10 @@ img {
 .container .list {
     display: flex;
 }
-.header-container {
-    display: flex;
-    align-items: center;
-}
-.header-nav {
-    display: flex;
-    align-items: center;
-    gap: 91px;
-    flex-grow: 1;
-}
-.cont-list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-.cont-nav {
-    gap: 50px;
-    display: flex;
-    align-items: center;
-}
-.bg-nav-mail {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.bg-nav-tel {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
 
-.icon-nav-mail {
-    fill: var(--secondary-text-color);
-    width: 16px;
-    height: 12px;
-}
-.icon-nav-tel {
-    fill: var(--secondary-text-color);
-    width: 10px;
-    height: 16px;
-}
-.button-portf {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    padding-top: 94px;
-    margin-bottom: 50px;
-}
 
 /* header */
-    /* logo style */
-.page-header {
+.header {
     margin: 0 auto;
     padding: 24px 0 25px 0;
     border-bottom: 1px solid #ececec
@@ -126,7 +75,137 @@ img {
     letter-spacing: 0.04em;
     text-decoration: none;
 }
+.logo__first {
+    color: var(--accent-text-color);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+        /* main navigation */
+.navigation__main {
+    display: flex;
+    align-items: center;
+    gap: 91px;
+    flex-grow: 1;
+}
+.navigation {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    list-style: none;
+}
+.navigation__studio,
+.navigation__portfolio,
+.navigation__cont {
+    color: var(--basic-text-color);
+    text-decoration: none;
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__studio:hover,
+.navigation__portfolio:hover,
+.navigation__cont:hover,
+.navigation__studio:focus,
+.navigation__portfolio:focus,
+.navigation__cont:focus {
+    color: var(--accent-text-color);
+}
+.navigation__studio--selected,
+.navigation__portfolio--selected {
+    color: var(--accent-text-color);
+}
+.navigation__studio--selected::after,
+.navigation__portfolio--selected::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    position: absolute;
+    left: 0;
+    top: 48.5px;
+    border-radius: 2px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
 
+.contacts {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.bg-nav-mail {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-nav-tel {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-nav-mail {
+    fill: var(--secondary-text-color);
+    width: 16px;
+    height: 12px;
+}
+
+.icon-nav-tel {
+    fill: var(--secondary-text-color);
+    width: 10px;
+    height: 16px;
+}
+
+.button-portf {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+/* contact info */
+.contacts {
+    font-size: 14px;
+    list-style: none;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+.contacts a,
+.icon-nav-mail,
+.icon-nav-tel {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bg-nav-mail:hover .icon-nav-mail,
+.bg-nav-mail:hover,
+.bg-nav-mail:focus,
+.bg-nav-mail:focus .icon-nav-mail,
+.bg-nav-tel:hover,
+.bg-nav-tel:focus,
+.bg-nav-tel:hover .icon-nav-tel,
+.bg-nav-tel:focus .icon-nav-tel {
+    fill: var(--accent-text-color);
+    color: var(--accent-text-color);
+}
     /* footer info  */
 .footer-main {
     margin: 0 auto;
@@ -148,11 +227,7 @@ img {
     margin: 0 auto;
     margin-bottom: 20px;
 }
-.logo-first {
-    color: var(--accent-text-color);
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
+
 
 .footer-cont {
     font-size: 14px;
@@ -284,78 +359,6 @@ img {
     align-items: center;
     gap: 10px;
     cursor: pointer;
-}
-    /* main navigation */
-.cont-list {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    list-style: none;
-}
-.cont-list-stud,
-.cont-list-port,
-.cont-list-cont {
-    color: var(--basic-text-color);
-    text-decoration: none;
-    position: relative;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.cont-list-stud:hover,
-.cont-list-port:hover,
-.cont-list-cont:hover,
-.cont-list-stud:focus,
-.cont-list-port:focus,
-.cont-list-cont:focus {
-    color: var(--accent-text-color);
-}
-.cont-list-port.current,
-.cont-list-stud.current {
-    color: var(--accent-text-color);
-}
-.cont-list-port.current::after,
-.cont-list-stud.current::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-text-color);
-    position: absolute;
-    left: 0;
-    top: 48.5px;
-    border-radius: 2px;
-}
-
-    /* contact info */
-.cont-nav {
-    font-size: 14px;
-    list-style: none;
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-}
-.cont-nav a,
-.icon-nav-mail,
-.icon-nav-tel {
-    color: var(--secondary-text-color);
-    text-decoration: none;
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.bg-nav-mail:hover .icon-nav-mail,
-.bg-nav-mail:hover,
-.bg-nav-mail:focus,
-.bg-nav-mail:focus .icon-nav-mail,
-.bg-nav-tel:hover,
-.bg-nav-tel:focus,
-.bg-nav-tel:hover .icon-nav-tel,
-.bg-nav-tel:focus .icon-nav-tel
- {
-    fill: var(--accent-text-color);
-    color: var(--accent-text-color);
 }
 /* .bg-nav-mail:hover,
 .bg-nav-mail:focus {
