@@ -144,27 +144,28 @@ img {
     align-items: center;
 }
 
-.bg-nav-mail {
+.contacts__mail {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
 }
 
-.bg-nav-tel {
+.contacts__tel {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
-.icon-nav-mail {
+.contacts__mail-icon {
     fill: var(--secondary-text-color);
     width: 16px;
     height: 12px;
 }
 
-.icon-nav-tel {
+.contacts__tel-icon {
     fill: var(--secondary-text-color);
     width: 10px;
     height: 16px;
@@ -186,23 +187,24 @@ img {
     line-height: 1.17;
     letter-spacing: 0.02em;
 }
-.contacts a,
-.icon-nav-mail,
-.icon-nav-tel {
+.contacts__tel,
+.contacts__mail,
+.contacts__mail-icon,
+.contacts__tel-icon {
     color: var(--secondary-text-color);
     text-decoration: none;
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.bg-nav-mail:hover .icon-nav-mail,
-.bg-nav-mail:hover,
-.bg-nav-mail:focus,
-.bg-nav-mail:focus .icon-nav-mail,
-.bg-nav-tel:hover,
-.bg-nav-tel:focus,
-.bg-nav-tel:hover .icon-nav-tel,
-.bg-nav-tel:focus .icon-nav-tel {
+.contacts__mail:hover .contacts__mail-icon,
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__mail:focus .contacts__mail-icon,
+.contacts__tel:hover,
+.contacts__tel:focus,
+.contacts__tel:hover .contacts__tel-icon,
+.contacts__tel:focus .contacts__tel-icon {
     fill: var(--accent-text-color);
     color: var(--accent-text-color);
 }
@@ -360,10 +362,6 @@ img {
     gap: 10px;
     cursor: pointer;
 }
-/* .bg-nav-mail:hover,
-.bg-nav-mail:focus {
-    color: var(--accent-text-color);
-} */
 
 /* main section */
 .primary-section {
