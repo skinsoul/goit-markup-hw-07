@@ -32,8 +32,8 @@ img {
     /* delete list dot */
 .list,
 .button-portf,
-.list-footer,
-.client-list {
+.footer__list,
+.clients__list {
     list-style: none;
 }
                 /* containers */
@@ -46,13 +46,13 @@ img {
 .section,
 .about,
 .team,
-.section-client {
+.clients {
     margin: 0 auto;
     padding-bottom: 94px;
 }
 .advatages,
 .team,
-.section-client {
+.clients {
     padding-top: 94px;
 }
 .container .list {
@@ -370,17 +370,14 @@ img {
     letter-spacing: 0.03em;
     margin-bottom: 16px;
 }
-.hero-logos {
+.card__logo {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     flex-basis: calc((100% - 30px) / 4)
 }
-.insta-hero,
-.twit-hero,
-.face-hero,
-.linke-hero {
+.card__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -393,26 +390,19 @@ img {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.insta-hero:hover,
-.twit-hero:hover,
-.face-hero:hover,
-.linke-hero:hover,
-.insta-hero:focus,
-.twit-hero:focus,
-.face-hero:focus,
-.linke-hero:focus {
+.card__icon:hover,
+.card__icon:focus {
     fill: var(--title-text-color);
     background-color: var(--accent-text-color);
 }
-
-.client-hero {
+.clients__title {
     font-size: 36px;
     margin-bottom: 50px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
 }
-.client-img {
+.clients__icon {
     display: flex;
     width: 170px;
     height: 92px;
@@ -427,15 +417,15 @@ img {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-list {
+.clients__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
     flex-basis: calc((100% - 150px) /6);
 }
-.client-img:hover,
-.client-img:focus {
+.clients__icon:hover,
+.clients__icon:focus {
     fill: var(--accent-text-color);
     border: 1px solid var(--accent-text-color)
 }
@@ -783,15 +773,15 @@ img {
 
 }
     /* footer info  */
-.footer-main {
+.footer {
     margin: 0 auto;
     padding: 60px 0;
     background-color: var(--background-color);
 }
-.footer-info {
+.footer__info {
     margin-right: 94px;
 }
-.logo-footer {
+.footer__logo {
     display: block;
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
@@ -804,30 +794,30 @@ img {
     margin-bottom: 20px;
 }
 
-.footer-cont {
+.footer__contacts {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
 }
 
-.footer-adre {
+.footer__address {
     color: var(--title-text-color);
     margin: 0 auto;
     margin-bottom: 9px;
 }
 
-.footer-mail,
-.footer-tel {
+.footer__mail,
+.footer__tel {
     display: block;
     color: rgba(255, 255, 255, 60%);
     text-decoration: none;
     margin: 0 auto;
 }
-.footer-mail {
+.footer__mail {
     margin-bottom: 9px;
 }
-.footer-text {
+.social__item {
     color: var(--button-color-portfolio);
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -835,28 +825,25 @@ img {
     line-height: 1.17;
     text-transform: uppercase;
 }
-.footer-main-cont {
+.footer__container {
     display: flex;
     align-items: baseline;
 }
-.footer-social {
+.footer__social {
     justify-content: center;
     align-items: center;
     padding-right: 93px;
 }
-.footer-text {
+.social__item {
     margin-bottom: 20px;
 }
-.footer-logos {
+.social__logos {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-self: start;
 }
-.insta-footer,
-.twit-footer,
-.face-footer,
-.linke-footer {
+.social__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -869,25 +856,19 @@ img {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.insta-footer:hover,
-.twit-footer:hover,
-.face-footer:hover,
-.linke-footer:hover,
-.insta-footer:focus,
-.twit-footer:focus,
-.face-footer:focus,
-.linke-footer:focus {
+.social__icon:hover,
+.social__icon:focus {
     fill: var(--title-text-color);
     background-color: var(--accent-text-color);
 }
-.footer-form-line {
+.footer__form {
     display: flex;
     align-items: center;
 }
-.form-footer {
+.form {
     margin-right: 12px;
 }
-.footer-form-hero {
+.footer__form-hero {
     font-family: inherit;
     font-size: 14px;
     font-weight: 700;
@@ -898,7 +879,7 @@ img {
     color: var(--button-color-portfolio);
     margin-bottom: 20px;
 }
-.form-footer input {
+.form input {
     padding: 15px 16px;
     width: 358px;
     background-color: var(--background-color);
