@@ -209,7 +209,8 @@ ul {
   right: 5.5px;
 }
 
-.modal__backdrop:hover {
+.modal__backdrop:hover,
+.modal__backdrop:focus {
   fill: var(--accent-text-color);
   cursor: pointer;
 }
@@ -383,6 +384,8 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-origin: border-box;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .modal__comment label {
