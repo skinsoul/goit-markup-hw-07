@@ -173,7 +173,7 @@
     position: absolute;
 }
 
-.checkbox:checked+.icon-check {
+.checkbox:checked+.modal__icon-check {
     background-color: var(--accent-text-color);
     border-radius: 2px;
     border-color: var(--accent-text-color);

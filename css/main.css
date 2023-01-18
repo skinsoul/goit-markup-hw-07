@@ -102,8 +102,8 @@ ul {
 .primary__button:focus,
 .primary__button:hover {
   cursor: pointer;
-  background-color: var(--title-text-color);
-  color: var(--accent-text-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Filter */
@@ -372,7 +372,7 @@ ul {
   position: absolute;
 }
 
-.checkbox:checked + .icon-check {
+.checkbox:checked + .modal__icon-check {
   background-color: var(--accent-text-color);
   border-radius: 2px;
   border-color: var(--accent-text-color);
@@ -470,7 +470,7 @@ ul {
 }
 
 .section,
-.about,
+.advatages .about,
 .team,
 .clients {
   margin: 0 auto;
@@ -674,7 +674,7 @@ ul {
   text-transform: uppercase;
 }
 
-.advatages {
+.advatages__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,7 +691,7 @@ ul {
   text-transform: uppercase;
 }
 
-.advatages li::before {
+.advatages__list li::before {
   display: block;
   content: "";
   height: 120px;
