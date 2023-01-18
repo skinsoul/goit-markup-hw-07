@@ -86,6 +86,8 @@ ul {
   font-size: 16px;
   background-color: var(--accent-text-color);
   color: var(--title-text-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-weight: 700;
   line-height: 1.88;
@@ -102,8 +104,6 @@ ul {
 .primary__button:focus,
 .primary__button:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Filter */
@@ -491,7 +491,6 @@ ul {
 
 .header {
   margin: 0 auto;
-  padding: 24px 0 25px 0;
   border-bottom: 1px solid #ececec;
 }
 
@@ -524,9 +523,12 @@ ul {
 }
 
 .navigation__link {
+  display: block;
   color: var(--basic-text-color);
   text-decoration: none;
   position: relative;
+  padding-bottom: 32px;
+  padding-top: 32px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -551,8 +553,8 @@ ul {
   height: 4px;
   background-color: var(--accent-text-color);
   position: absolute;
+  bottom: -1px;
   left: 0;
-  top: 48.5px;
   border-radius: 2px;
 }
 

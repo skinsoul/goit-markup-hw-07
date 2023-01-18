@@ -1,6 +1,5 @@
 .header {
     margin: 0 auto;
-    padding: 24px 0 25px 0;
     border-bottom: 1px solid #ececec
 }
 
@@ -23,9 +22,12 @@
 }
 
 .navigation__link {
+    display: block;
     color: var(--basic-text-color);
     text-decoration: none;
     position: relative;
+    padding-bottom: 32px;
+    padding-top: 32px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,8 +49,8 @@
     height: 4px;
     background-color: var(--accent-text-color);
     position: absolute;
+    bottom: -1px;
     left: 0;
-    top: 48.5px;
     border-radius: 2px;
 }
 

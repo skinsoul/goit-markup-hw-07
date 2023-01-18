@@ -6,6 +6,7 @@
     font-size: 16px;
     background-color: var(--accent-text-color);
     color: var(--title-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: inherit;
     font-weight: 700;
     line-height: 1.88;
@@ -20,8 +21,7 @@
 .primary__button:focus,
 .primary__button:hover {
     cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
-
+}
             /* Filter */
 .filter__button {
     border: 0px;
