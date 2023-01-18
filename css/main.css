@@ -104,6 +104,7 @@ ul {
 .primary__button:focus,
 .primary__button:hover {
   cursor: pointer;
+  background-color: #188CE8;
 }
 
 /* Filter */
@@ -476,13 +477,16 @@ ul {
 }
 
 .section,
-.advatages .about,
+.advatages,
+.section__filter,
+.about,
 .team,
 .clients {
   margin: 0 auto;
   padding-bottom: 94px;
 }
 
+.section__filter,
 .advatages,
 .team,
 .clients {
@@ -937,7 +941,6 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -1037,9 +1040,6 @@ ul {
 }
 
 .portfolio__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -1049,9 +1049,6 @@ ul {
 }
 
 .portfolio__direction {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 16px;
   color: var(--secondary-text-color);
   line-height: 1.88;
@@ -1125,7 +1122,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 93px;
+  margin-right: 94px;
 }
 
 .social__item {
