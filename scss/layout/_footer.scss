@@ -5,7 +5,7 @@
 }
 
 .footer__info {
-    margin-right: 94px;
+    margin-right: 80px;
 }
 
 
@@ -51,7 +51,7 @@
 .footer__social {
     justify-content: center;
     align-items: center;
-    margin-right: 94px;
+    margin-right: 93px;
 }
 
 .social__item {
@@ -85,13 +85,10 @@
     background-color: var(--accent-text-color);
 }
 
-.footer__form {
+.form {
     display: flex;
     align-items: center;
-}
-
-.form {
-    margin-right: 12px;
+    gap: 12px;
 }
 
 .footer__item {

@@ -1069,7 +1069,7 @@ ul {
 }
 
 .footer__info {
-  margin-right: 94px;
+  margin-right: 80px;
 }
 
 .footer__contacts {
@@ -1122,7 +1122,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 94px;
+  margin-right: 93px;
 }
 
 .social__item {
@@ -1169,17 +1169,14 @@ ul {
   background-color: var(--accent-text-color);
 }
 
-.footer__form {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.form {
-  margin-right: 12px;
+  gap: 12px;
 }
 
 .footer__item {
