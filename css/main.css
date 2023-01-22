@@ -471,11 +471,21 @@ ul {
 /* Layot */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .section,
 .advatages,
 .section__filter,
@@ -702,15 +712,23 @@ ul {
 .primary__title {
   margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
   color: var(--title-text-color);
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .primary__title {
+    max-width: 696px;
+    color: var(--title-text-color);
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 .advatages__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,6 +781,11 @@ ul {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1200px) {
+  .about__container {
+    display: none;
+  }
+}
 .about__block {
   margin-right: 30px;
   max-width: 370px;
