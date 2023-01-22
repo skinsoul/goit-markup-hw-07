@@ -521,7 +521,7 @@ ul {
   display: none;
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .navigation__list {
     font-size: 14px;
     font-weight: 500;
@@ -582,6 +582,21 @@ ul {
           align-items: center;
 }
 
+.header__contacts {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    gap: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .header__contacts {
   gap: 50px;
   display: -webkit-box;
